@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quattrocento:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+  font-family: 'DM Serif Display', 'Montserrat', 'Quattrocento', 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to bottom right, rgb(17, 6, 6), rgb(23, 29, 57));
+  color: white;
+  max-width: 100%;
+}
+/* rgb(32, 40, 74) */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Footer{
+  margin-top: auto;
+  bottom: 0;
+}
+
+.App{
+  margin: 0px;
+  padding: 0px;
+  /* background-image: linear-gradient(to bottom right, rgb(17, 6, 6), rgb(32, 40, 74)); */
+  min-height: 100vh;
+  /* color: white; */
+  text-align: center;
+  /* font-family: 'roboto', sans; */
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.Nav{
+  background-color: transparent;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 30px;
+  /* margin-bottom: 20px; */
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-image: linear-gradient(black, transparent);
+}
+
+.Navitems{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  height: 100%;
+  padding-right: 8px;
+}
+
+.navpages{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 35%;
+  padding: 0;
+  /* gap: 10px; */
+}
+
+.navpages > li > a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  /* transition: text-decoration 1000ms ease-in-out; */
+}
+
+.navpages > li > a:hover{ 
+  /* text-decoration: underline; */
+color: #f39a9a;}
+
+.logo{
+  height: 40px;
+}
+
+.bannerdiv{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: cover;
+}
+.bannertext{
+  position: absolute;
+  bottom: 8vh;
+  width: 100%;
+  font-size: 48px;
+  text-shadow: 0 0 8px #000000;
+  /* font-family: "Quattrocento", serif; */
+  font-family: "DM Serif Display", serif;
+  /* font-family: "Yeseva One", serif; */
+}
+
+.banner{
+  height: 100%;
+  width: 100%;
+  opacity: 100%;
+  object-fit:cover;
+  -webkit-mask-image: linear-gradient( rgb(0 0 0/1), rgb(0 0 0/ 0.5) 70%, rgb(0 0 0/ 0.2) 85%, rgb(0 0 0/ 0) 98%); 
+  /* mask-image: radial-gradient( rgb(0 0 0/1) 40%, rgb(0 0 0/ 0.5) 55%, rgb(0 0 0/ 0) 70%); */
+  /* mask-image: radial-gradient(closest-side, rgb(0 0 0/1), rgb(0 0 0/ 0.5) 40%, rgb(0 0 0/ 0) 70%); */
+  mask-image: linear-gradient( rgb(0 0 0/0) 0%, rgb(0 0 0/1), rgb(0 0 0/ 0.5) 70%, rgb(0 0 0/ 0.2) 85%, rgb(0 0 0/ 0) 98%); 
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.1), 0 0 40px rgba(0,0,0,0.1), 0 0 60px rgba(0,0,0,0.1), 0 0 80px rgba(0,0,0,0.1); */
+}
+
+/* .bannerMobile{
+  display: none;
+  height: 100%;
+  width: 100%;
+  opacity: 100%;
+  object-fit:cover;
+  -webkit-mask-image: linear-gradient( rgb(0 0 0/1), rgb(0 0 0/ 0.5) 70%, rgb(0 0 0/ 0.2) 85%, rgb(0 0 0/ 0) 98%); 
+  mask-image: linear-gradient( rgb(0 0 0/1), rgb(0 0 0/ 0.5) 70%, rgb(0 0 0/ 0.2) 85%, rgb(0 0 0/ 0) 98%); 
+  } */
+.signupContainer{
+  /* opacity: 0; */
+  transition: opacity 1000ms ease;
+    /* margin-top: 130px; */
+    height: 100vh;
+    /* background-size: 100vh; */
+    width: 100%;
+    background: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #000000;
+  /* background-repeat: no-repeat; */
+    /* background-image: url(./components/utils/login.png); */
+  }
+
+  .signup{
+    position: absolute;
+    background-color: rgb(0 0 0/ 0.75);
+    padding: 0 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.591) 0px 5px 15px
+  }
+
+  .Login{
+    position: absolute;
+    background-color: rgb(0 0 0/ 0.75);
+    padding: 0 10px 20px;
+     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.591) 0px 5px 15px
+  }
+
+.LoginBg{
+  object-fit:contain;
+  /* background-repeat: no-repeat; */
+  height: 100%;
+  width: 100%;
+}
+
+.signupForm, .LoginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.UsernameDiv, .PasswordDiv, .LoginForm{
+  position: relative;
+}
+.UsernameDiv > p, .PasswordDiv > p{
+    font-size: 11px;
+    margin: 0;
+    color: #d22323;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-weight: 400;
+  }
+
+.error{
+  font-size: 12px;
+  margin: 0;
+  color: #d22323;
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  font-weight: 400;
+  /* font-family:; */
+}
+
+.Input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.712);
+    /* border-radius: 10px; */
+    padding: 10px 10px;
+    margin: 14px 4px;
+    color: white;
+    width: 210px;
+  }
+.Input:focus{
+    outline: none;
+    /* border: 1px solid #f39a9a; */
+    border: none;
+    border-bottom: 1px solid #c45c17;
+  }
+
+  .invalid, .invalid:focus{
+    outline: none;
+    /* border-color: #9b2b2b; */
+    border-color: #d22323;
+}
+.valid, .valid:focus{
+  outline: none;
+  border-color: #299158;
+  /* border: 1px solid #299158; */
+}
+
+.Submit{
+    background-color:#c45c17 ;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px 14px;
+    /* margin: 14px 4px; */
+    margin: 20px 4px 14px;
+    color:white;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.Submit:hover{
+  background-color: #000000;
+  color: #c45c17;
+  border: 1px solid #c45c17;
+}
+
+a{text-decoration: none; color: #f39a9a;}
+
+.linktoLogin{
+  font-size: 12px;
+  color: #fff;
+}
+.linktoLogin:hover{
+  color: #c45c17
+}
+
+.Home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.trending_heading{
+  font-size: 32px;
+  font-family: 'Montserrat', sans;
+  font-weight: 200;
+  font-style: normal;
+  color: #f39a9a;
+  text-shadow: 0 0 8px #000000;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px ;
+  margin: 20px 20px;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.post{
+  /* border: 5px solid black; */
+  /* background-color: bisque; */
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 240px;
+  border-radius: 8px;
+  width: 160px;
+}
+
+.movieposter{
+  height: 240px;
+  width: 160px;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  object-fit: cover;
+}
+.movieposter:hover{
+  border: 1.5px solid #f39a9a;
+}
+
+.DisplayPost{
+  display: flex;
+  justify-content: space-around;
+  gap: 48px;
+  margin: 130px 20px 50px;
+  max-width: 1000px;
+  text-align: left;
+  /* flex-wrap: wrap; */
+}
+
+.MainPoster{position: sticky;}
+.movieImg{
+  height: 400px;
+  /* width: 128px; */
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+cursor: pointer;
+}
+
+.avgRatingDiv{
+  display:flex; 
+  align-items:center; 
+  gap: 30px; 
+  flex-direction: row;
+  padding-left: 8px;
+}
+
+.avgRating{
+  color: #f39a9a;
+  display: flex;
+  align-items: center;
+  gap:8px;
+}
+
+.AboutMovie{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.movieInfo{
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.movieTitle{ font-family: 'DM Serif Display'; font-size: 36px;}
+
+.directors{
+  display: flex;
+  gap: 5px;
+  font-weight: 200;
+}
+.directors>p{margin: 0;}
+
+.movieAllinfo{
+  display: flex;
+  gap: 48px;
+}
+
+.moviePlot{
+  font-family: "Quattrocento", serif;
+  line-height: 1.4;
+}
+
+.CastGenre{
+  font-weight: 200;
+}
+.CastGenre>div{ margin: 5px 0;}
+
+.castname, .genrename{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 6px;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-right: 6px;
+  background-color: #ffffff15;
+  width: max-content;
+}
+
+.TabPanel{
+  padding: 0;
+}
+
+.PanelnotLogin, .BoxOffice{
+ padding: 16px 16px;
+ background-color: #ffffff15;
+ display: flex;
+ /* align-items: center; */
+ border-radius: 8px;
+ justify-content: center;
+ height: max-content;
+ flex-direction: column;
+ box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ width: 200px;
+ min-height: 50px;
+ text-align: center;
+}
+
+.BoxOffice{
+  margin-top: 10px;
+  position: relative;
+}
+
+.boxofficeText{
+  font-weight: 300;
+  font-size: 14px;
+  text-align: left;
+  margin: 2px 0;
+  display: grid;
+  grid-template-columns: 90px 80px;
+  row-gap: 1px;
+}
+.boxofficeHeading{
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.updateboxofficeBtn{
+  width: max-content;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px;
+  color: gray;
+  padding: 0;
+  align-self: flex-end;
+}
+.updatebtnHover{
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  right: 0;
+  /* color: rgb(0, 0, 0); */
+  /* background-color: rgba(114, 93, 93, 0.457); */
+}
+
+.SearchList{
+  margin-top: 130px;
+}
+
+.searchres{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows:  110px;
+  grid-gap: 5px;
+  width: 800px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #ffffff15;
+  margin: 15px 15px;
+  cursor: pointer;
+}
+.searchposter{
+  height: 100px;
+  margin: 5px 5px;
+  justify-self: end;
+}
+.searchinfo{
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+  text-align: left;
+}
+.searchtitle{
+  font-size: 32px;
+  font-family: "DM Serif Display";
+}
+
+/* @media(orientation:potrait){
+  .banner{display: none;}
+  .bannerMobile{display: block;}
+} */
+
+.Films{
+  margin-top: 130px;
+}
+
+.Profile{
+  margin-top: 130px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0px 20px 20px;
+}
+.userDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 20px;
+}
+.userName{display: flex; align-items: center; gap: 20px; font-size: 24px; font-family: 'Montserrat';}
+.filmsNumber{font-size:32px; font-family: 'DM Serif Display'}
+
+.userNav{
+  margin-top: 30px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.133);
+  padding: 0;
+}
+
+.userMovies{
+  display: flex;
+  gap: 10px;
+  padding: 20px 20px;
+}
+.usermovie{
+  position: relative;
+  height: max-content;
+  width: max-content;
+}
+.usermovieposter{
+  height: 240px;
+  width: 160px;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  object-fit: cover;
+}
+.usermoviehover{
+  position: absolute;
+  cursor: pointer;
+  height: 240px;
+  width: 160px;
+  background-color: #000000d7;
+  color: white;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1.5px solid #f39a9a;
+  border-radius: 8px;
+  text-shadow: 0 0 8px #000000;
+  font-family: 'montserrat';
+}
+.usermoviename{font-family: 'dm serif display'; font-size: 20px;}
+
+.watchedicondiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 12px;
+  width: 60px;
+}
+.watchedicontext{
+  font-weight: 200;
+}
+
+.newList{
+   margin: 0 5px;
+  /* border: none; */
+  /* height: 20px; */
+  background-color: grey;
+  padding: 5px 5px;
+  font-size: 13px;
+  border-radius: 4px;
+  /* line-height: 1.5; */
+  /* padding: 5px 10px; */
+  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+  display: block;
+  /* height: 30px; */
+}
+.newList:hover {
+    border-color: #ccc;
+}
+.newList:focus{
+    border-color: #9147ff;
+    outline: none;
+    background: #fff;
+}
+.listNames{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 5px;
+}
+.addListBtn{cursor: pointer;}
+
+.Blog{
+  margin-top: 130px;
+}
